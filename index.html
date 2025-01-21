@@ -7,6 +7,45 @@
     <title>My fantastic weather app</title>
   </head>
   <body>
+    <div class="weather-app">
+      <header>
+        <div class="quote"><span> My mood depends on the weather!</span></div>
+        <form action="search" id="search-form">
+          <input type="text" name="Enter a city" id="input-city" />
+          <input type="submit" value="Search" id="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="city-date">
+          <h1 id="city">Berlin</h1>
+          <h2 id="day-date">Monday 12:30</h2>
+        </div>
+        <div id="emoji">⛅️</div>
+        <div class="weather-info">
+          <div class="temp-comment">
+            <h3>
+              <p id="temp">10°C</p>
+              <p id="comment">Scattered clouds</p>
+            </h3>
+          </div>
+          <h3>
+            <div id="weather-conditions">
+              <div class="humidity">
+                <span id="humidity">20% Humidity</span>
+              </div>
+              <div class="wind"><span id="wind">Wind 20km/hr</span></div>
+            </div>
+          </h3>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="" target="_blank"> Matt Delac</a>, is
+        <a href="" target="_blank">open-sourced on GitHub</a>
+        and
+        <a href="" target="_blank">hosted on Netlify</a>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
